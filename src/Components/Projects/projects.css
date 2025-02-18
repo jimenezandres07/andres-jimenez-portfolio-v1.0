@@ -1,0 +1,143 @@
+.project__card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 20vw;
+	height: 60vh;
+
+	background: var(--color-bg-variant);
+	border: 1px solid transparent;
+	border-radius: 1rem;
+	padding: 2rem;
+	text-align: center;
+	transition: var(--transition);
+}
+
+.project__card:hover {
+	background: transparent;
+	border-color: var(--color-primary-variant);
+	cursor: default;
+}
+
+.project__image {
+	width: 15vw;
+	height: 30vh;
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+	height: 30vh;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+
+.cta {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+@media screen and (max-width: 1024px) {
+	.cards__container {
+		flex-direction: column;
+	}
+	.project__image {
+		height: 20vh;
+	}
+	.cta {
+		flex-direction: column;
+	}
+}
+/* MEDIA QUERIES (SMALL) */
+
+@media screen and (max-width: 600px) {
+	.cards__container {
+		flex-direction: column;
+		margin-top: 3rem;
+	}
+
+	.cards__container-top {
+		width: 40vw;
+	}
+
+	#projects {
+		margin-top: 20rem;
+	}
+
+	.project__card {
+		height: 40%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.project__image {
+		height: 100%;
+		width: 100%;
+	}
+
+	.cta {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 412px) {
+	#projects {
+		margin-top: 30rem;
+	}
+
+	.cards__container {
+		gap: 1.3rem;
+	}
+
+	.cards__container-top {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	#projects {
+		margin-top: 50rem;
+		margin-bottom: 35rem;
+	}
+
+	.cards__container {
+		gap: 1.3rem;
+	}
+
+	.cards__container-top {
+		width: 70%;
+	}
+}
+@media screen and (max-width: 375px) {
+	#projects {
+		margin-top: 50rem;
+		margin-bottom: 35rem;
+	}
+
+	.cards__container {
+		gap: 1.3rem;
+	}
+
+	.cards__container-top {
+		width: 70%;
+	}
+}
+@media screen and (max-width: 420px) {
+	#projects {
+		margin-top: 50rem;
+		margin-bottom: 5rem;
+	}
+
+	.cards__container {
+		gap: 1.3rem;
+	}
+
+	.cards__container-top {
+		width: 70%;
+	}
+}
